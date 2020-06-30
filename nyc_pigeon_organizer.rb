@@ -34,7 +34,6 @@ def nyc_pigeon_organizer(data)
       value.each do |item|
         #these are arrays of pigeon names
         pigeon_list[item][category].push(attribute)
-        end
       end
     end
   end
