@@ -33,7 +33,7 @@ def nyc_pigeon_organizer(data)
       attribute = key
       value.each do |item|
         #these are arrays of pigeon names
-        pigeon_list[item][category].push(attribute)
+        pigeon_list[item][category].push(attribute.to_s)
       end
     end
   end
