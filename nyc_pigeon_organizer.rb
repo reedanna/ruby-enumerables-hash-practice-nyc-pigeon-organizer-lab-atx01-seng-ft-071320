@@ -26,6 +26,18 @@ def nyc_pigeon_organizer(data)
   end
   
   data.each do |key, value|
+    #this is for the top layer of hash--keys are attributes, values are colors/genders/places
+    category = key
+    value.each do |key, value|
+      #second layer of hash--keys are colors/genders/places, values are arrays of pigeon names
+      attribute = key
+      value.each do |item|
+        #these are arrays of pigeon names
+        pigeon_list[item][category].push(attribute)
+        end
+      end
+    end
+  end
     
   
   #return the pigeon list
